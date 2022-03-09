@@ -3,11 +3,22 @@
 
 int main(void)
 {
-    string name = get_string("What is your name? \n");
-    printf("Hello, %s.\n", name);
-    int age = get_int("And what is your age %s ?\n", name);
-    printf("So, your name is %s, and you are %i years old.\n", name, age);
-    int counter = 0;
-    printf("If so, next year, you are going to be %i.\n", age + 1);
-    string yn = get_string("Right? (Y/N)?");
+    //This is readable zone;
+    int x = get_int("X:?\n");
+    int y = get_int("Y:?\n");
+    //Z example
+    //    int z = x+y;
+    //    printf("The sum of %f+%f is %f\n",x, y, z);
+    if (x > y)
+    {
+        printf("X is bigger than Y.\n");
+    }
+    else if (x < y)
+    {
+        printf("X is smaller than Y.\n");
+    }
+    else (x = y);
+    {
+        printf("X is eaqual to Y.\n");
+    }
 }
